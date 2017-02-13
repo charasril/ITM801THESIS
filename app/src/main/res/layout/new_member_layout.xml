@@ -3,4 +3,157 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="ระบุนามสกุล"
+        android:ems="10"
+        android:layout_marginTop="17dp"
+        android:id="@+id/editText_lname"
+        android:layout_below="@+id/editText_fname"
+        android:layout_alignLeft="@+id/editText_fname"
+        android:layout_alignStart="@+id/editText_fname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="ระบุ user"
+        android:ems="10"
+        android:layout_marginTop="14dp"
+        android:id="@+id/editText_user"
+        android:layout_below="@+id/editText_lname"
+        android:layout_alignLeft="@+id/editText_lname"
+        android:layout_alignStart="@+id/editText_lname" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText_password"
+        android:layout_below="@+id/editText_user"
+        android:layout_alignLeft="@+id/editText_user"
+        android:layout_alignStart="@+id/editText_user"
+        android:layout_marginTop="17dp"
+        android:text="ระบุ password" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="ระบุชื่อ"
+        android:ems="10"
+        android:layout_marginTop="35dp"
+        android:id="@+id/editText_fname"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="73dp"
+        android:layout_marginEnd="73dp" />
+
+    <TextView
+        android:text="ชื่อ : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_alignBaseline="@+id/editText_fname"
+        android:layout_alignBottom="@+id/editText_fname"
+        android:layout_toLeftOf="@+id/editText_lname"
+        android:layout_toStartOf="@+id/editText_lname"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <TextView
+        android:text="นามสกุล : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_alignBaseline="@+id/editText_lname"
+        android:layout_alignBottom="@+id/editText_lname"
+        android:layout_toLeftOf="@+id/editText_user"
+        android:layout_toStartOf="@+id/editText_user"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <TextView
+        android:text="User : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_alignBaseline="@+id/editText_user"
+        android:layout_alignBottom="@+id/editText_user"
+        android:layout_toLeftOf="@+id/editText_password"
+        android:layout_toStartOf="@+id/editText_password"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <TextView
+        android:text="Password : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:layout_alignBaseline="@+id/editText_password"
+        android:layout_alignBottom="@+id/editText_password"
+        android:layout_toLeftOf="@+id/editText_repassword"
+        android:layout_toStartOf="@+id/editText_repassword"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <TextView
+        android:text="Confirm Password : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        android:layout_alignBaseline="@+id/editText_repassword"
+        android:layout_alignBottom="@+id/editText_repassword"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText_repassword"
+        android:layout_marginTop="12dp"
+        android:text="ยืนยัน password"
+        android:layout_below="@+id/editText_password"
+        android:layout_alignLeft="@+id/editText_password"
+        android:layout_alignStart="@+id/editText_password"
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp" />
+
+    <Button
+        android:text="จัดเก็บ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/button_user_save"
+        android:layout_below="@+id/editText_repassword"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4" />
+
+    <Button
+        android:text="ล้างหน้าจอ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_user_clear"
+        android:layout_alignBottom="@+id/button_user_save"
+        android:layout_toRightOf="@+id/textView6"
+        android:layout_toEndOf="@+id/textView6" />
+
+    <Button
+        android:text="ออก"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_user_exit"
+        android:layout_alignBaseline="@+id/button_user_clear"
+        android:layout_alignBottom="@+id/button_user_clear"
+        android:layout_alignRight="@+id/editText_password"
+        android:layout_alignEnd="@+id/editText_password" />
+
+
 </RelativeLayout>
