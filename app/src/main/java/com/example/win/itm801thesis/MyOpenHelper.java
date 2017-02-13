@@ -16,18 +16,6 @@ public class MyOpenHelper extends SQLiteOpenHelper{
     private String userName;
     private static final int userNum = 0;
 
-
-//    private static final String userTABLE_WayPointHist = "create table userWayPointHist (" +
-//            "_id integer pimary key," +
-//            "OriginFName text, " +
-//            "OriginLName text, " +
-//            "OriginLat text," +
-//            "OriginLng text," +
-//            "DetinationName text," +
-//            "DestinationLat text," +
-//            "DestinationLng text," +
-//            "Way text);";
-
     private static final String userTABLE = "create table userTABLE (" +
             "_id integer pimary key," +
             "userFName text, " +
@@ -47,8 +35,6 @@ public class MyOpenHelper extends SQLiteOpenHelper{
 
         db.execSQL(userTABLE);
 //        db.execSQL(userTABLE_WayPointHist);
-
-
     }
 
     @Override
