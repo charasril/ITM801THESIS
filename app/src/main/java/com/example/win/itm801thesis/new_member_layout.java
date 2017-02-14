@@ -64,9 +64,6 @@ public class new_member_layout extends Activity implements View.OnClickListener 
         msgChoice = msgDialog(this,"Save","Do you want to Save New User",2);
         if (msgChoice ==1) {
 
-
-
-
         }
     } //onSaveProcess จัดกเ็บ
 
